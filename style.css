@@ -44,6 +44,25 @@ body {
   filter: grayscale(20%) contrast(1.1);
 }
 
+/* Attendance Calendar Styles */
+#attendance-calendar {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr) !important;
+  gap: 12px !important;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#attendance {
+  display: none;
+  width: 100%;
+}
+
+#attendance.tab-content:not(.hidden) {
+  display: block !important;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -77,6 +96,11 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  #attendance-calendar {
+    grid-template-columns: repeat(7, 1fr) !important;
+    gap: 8px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -94,5 +118,10 @@ body {
 
   nav button {
     font-size: 14px;
+  }
+
+  #attendance-calendar {
+    grid-template-columns: repeat(7, 1fr) !important;
+    gap: 6px !important;
   }
 }
