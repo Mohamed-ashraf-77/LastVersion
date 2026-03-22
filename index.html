@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends Gym | فريندز جيم</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="pb-10">
+    <!-- Header -->
+    <header class="pt-12 pb-8 px-6 text-center relative overflow-hidden">
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-yellow-500/10 blur-[100px] rounded-full"
+      ></div>
+      <i
+        class="fa-solid fa-fire-flame-curved text-yellow-500 text-5xl mb-4 animate-pulse"
+      ></i>
+      <h1 class="text-5xl font-black tracking-tighter mb-2">
+        FRIENDS <span class="text-yellow-500">GYM</span>
+      </h1>
+      <p class="text-gray-400 text-lg">Men & Women | جدول تمارين المحترفين</p>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav
+      class="sticky top-0 z-50 bg-black/80 backdrop-blur-lg border-b border-white/10 mb-8"
+    >
+      <div class="flex justify-around max-w-xl mx-auto py-4">
+        <button
+          onclick="switchTab('front')"
+          id="btn-front"
+          class="nav-active font-bold px-4 pb-2 transition-all"
+        >
+          Front
+        </button>
+        <button
+          onclick="switchTab('back')"
+          id="btn-back"
+          class="text-gray-500 font-bold px-4 pb-2 transition-all"
+        >
+          Back
+        </button>
+        <button
+          onclick="switchTab('legs')"
+          id="btn-legs"
+          class="text-gray-500 font-bold px-4 pb-2 transition-all"
+        >
+          Legs
+        </button>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4">
+      <!-- FRONT SECTION -->
+      <section
+        id="section-front"
+        class="tab-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <h2
+          class="col-span-full text-2xl font-bold border-r-4 border-yellow-500 pr-4 mb-4"
+        >
+          تمارين الصدر والأكتاف
+        </h2>
+
+        <!-- Card 1 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Front/Barbell_Bench_Press.gif"
+              alt="Bench Press"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">بنش برس مستوي</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Front/Incline_Dumbbell_Bench_Press.gif"
+              alt="Incline Press"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">تجميع عالي دمبل</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Front/Seated_Barbell_Shoulder_Press.gif"
+              alt="Shoulder Press"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">كتف أمامي بار</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Front/Seated_Dumbbell_Shoulder_Press.gif"
+              alt="DB Shoulder Press"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">كتف أمامي دمبل</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Front/CABLE_CURL.gif"
+              alt="Cable Curl"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">مسطرة باي</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Front/Barbbell_Preacher_Curl.gif"
+              alt="Barbbell_Preacher_Curl"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">بــار إرتــكاز</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Front/SIT_UP.gif"
+              alt="Sit Up"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">بطن</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 5 5</p>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Front/PLANK-2.gif"
+              alt="Plank"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">بلانك</h3>
+            <p class="text-yellow-500 font-bold text-lg">30 ثانية</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BACK SECTION -->
+      <section
+        id="section-back"
+        class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <h2
+          class="col-span-full text-2xl font-bold border-r-4 border-yellow-500 pr-4 mb-4"
+        >
+          تمارين الظهر والذراع
+        </h2>
+
+        <!-- Card 1 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Back/LAT_PULL_DOWN.gif"
+              alt="Lat Pull Down"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">سحب عالي مسطرة</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Back/SEATED_CABLE_ROW.gif"
+              alt="Seated Cable Row"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">سحب بـالـقـبضة</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Back/REV_PEC_DECK_MC.gif"
+              alt="Reverse Pec Deck Machine"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">كتف خلفي</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Back/BB_SHRUG.gif"
+              alt="BB_SHRUG"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">تربــاس</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Back/BB_DL.gif"
+              alt="BB_DL"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">ديدليفت</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Back/CABLE_PUSH_DOWN.gif"
+              alt="Cable Push Down"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">مسطرة / حبل</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Back/BENCH_DIPS.gif"
+              alt="Bench Dips"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">Dips</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 8 (Moved from Legs section) -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Front/PLANK-2.gif"
+              alt="Plank"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">بلانك</h3>
+            <p class="text-yellow-500 font-bold text-lg">30 ثانية</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEGS & ABS SECTION -->
+      <section
+        id="section-legs"
+        class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <h2
+          class="col-span-full text-2xl font-bold border-r-4 border-yellow-500 pr-4 mb-4"
+        >
+          تمارين الأرجل والبطن
+        </h2>
+
+        <!-- Card 1 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Legs/BB_BSQT.gif"
+              alt="Barbell Back Squat"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">بار خلفي</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Legs/LGE_EXT-1.gif"
+              alt="Barbell Back Squat"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">رفرفة امامي</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Legs/LEG_CURL.gif"
+              alt="Barbell Back Squat"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">رفرفة خلفي</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Legs/DB_LUNGE-2.gif"
+              alt="Barbell Back Squat"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">طعن</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Legs/DEFICIT_DL.gif"
+              alt="Barbell Back Squat"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">ديدليفت</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="glass-card rounded-3xl overflow-hidden reveal">
+          <div class="p-2">
+            <img
+              src="./images/Legs/STD_CALF_RAISE-1.gif"
+              alt="Barbell Back Squat"
+              class="w-full h-48 object-cover rounded-2xl exercise-gif"
+            />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-2">ثمانة جهاز</h3>
+            <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
