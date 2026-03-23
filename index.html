@@ -14,27 +14,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <style>
-      #attendance-calendar {
-        display: grid !important;
-        grid-template-columns: repeat(7, 1fr) !important;
-        gap: 12px !important;
-        margin-bottom: 20px;
-        width: 100%;
-      }
-
-      #attendance {
-        width: 100%;
-      }
-
-      #attendance.hidden {
-        display: none !important;
-      }
-
-      #attendance:not(.hidden) {
-        display: block !important;
-      }
-    </style>
   </head>
   <body class="pb-10">
     <!-- Header -->
@@ -154,7 +133,7 @@
             />
           </div>
           <div class="p-6 text-center">
-            <h3 class="text-xl font-bold mb-2">كتف أمامي دمبل</h3>
+            <h3 class="text-xl font-bold mb-2">كتف جانبي دمبل</h3>
             <p class="text-yellow-500 font-bold text-lg">12 10 10</p>
           </div>
         </div>
@@ -451,10 +430,14 @@
       </section>
 
       <!-- Attendance Section -->
-      <section id="attendance" class="tab-content hidden px-6">
-        <h2 class="text-3xl font-bold mb-4">الحضور</h2>
+      <section id="attendance" class="d-grid tab-content hidden px-6">
+        <h2
+          class="text-3xl d-flex justify-content-center align-content-center font-bold mb-4"
+        >
+          الحضور
+        </h2>
         <p class="text-gray-500 mb-4">اضغط على اليوم لتأكيد التمرين:</p>
-        <div id="attendance-calendar" class="grid grid-cols-7 gap-2">
+        <div id="attendance-calendar" class="grid grid-cols-7 col-12 gap-2">
           <!-- سيتم إنشاء الأيام هنا بواسطة JavaScript -->
         </div>
       </section>
